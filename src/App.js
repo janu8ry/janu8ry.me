@@ -1,7 +1,20 @@
 import React from 'react';
-import { ChakraProvider, Box, Text, Link, VStack, Code, Grid, theme } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme, Box, Text, VStack, Grid, Stack } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
+import { MdEmail } from 'react-icons/md';
+import { FaGithub } from 'react-icons/fa';
+import { CgWebsite } from 'react-icons/cg';
 import { Logo } from './Logo';
+import { ButtonLink } from './components';
+
+const colors = {
+    brand: {
+        900: '#1a365d',
+        800: '#153e75',
+        700: '#2a69ac',
+    },
+};
+const theme = extendTheme({ colors });
 
 function App() {
     return (
@@ -11,18 +24,19 @@ function App() {
                     <ColorModeSwitcher justifySelf="flex-end" />
                     <VStack spacing={8}>
                         <Logo h="40vmin" pointerEvents="none" />
-                        <Text>
-                            Edit <Code fontSize="xl">src/App.js</Code> and save to reload.
-                        </Text>
-                        <Link
-                            color="teal.500"
-                            href="https://chakra-ui.com"
-                            fontSize="2xl"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Text
+                            bgGradient="linear(to-l, #7928CA,#FF0080)"
+                            bgClip="text"
+                            fontSize="6xl"
+                            fontWeight="extrabold"
                         >
-                            Learn Chakra
-                        </Link>
+                            Janu8ry
+                        </Text>
+                        <Stack spacing={4} direction="row" align="center">
+                            <ButtonLink text="Github" color="blue" link="https://github.com/janu8ry" icon={FaGithub} />
+                            <ButtonLink text="Website" color="red" link="https://somix.studio" icon={CgWebsite} />
+                            <ButtonLink text="Email" color="green" link="mailto:janu8ry0108@gmail.com" icon={MdEmail} />
+                        </Stack>
                     </VStack>
                 </Grid>
             </Box>
