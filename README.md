@@ -2,6 +2,6 @@
 
 ## Website about Me
 
-### made with React & Chakra-ui
+made with React & Chakra-ui
 
-[Here](https://somix.studio)
+Link -> [Here](https://somix.studio)
