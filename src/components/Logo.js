@@ -5,7 +5,7 @@ function Logo(props) {
     return (
         <Link href="/">
             <Box {...props}>
-                <Text bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text" fontSize="xl" fontWeight="extrabold">
+                <Text bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text" fontSize="2xl" fontWeight="extrabold">
                     Janu8ry
                 </Text>
             </Box>

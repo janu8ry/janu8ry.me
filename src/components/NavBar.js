@@ -43,7 +43,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
     );
 };
 
-const MenuItem = ({ children, isLast, to = '/', ...rest }) => { // eslint-disable-line
+const MenuItem = ({ children, to = '/', ...rest }) => {
     return (
         <Link href={to}>
             <Text display="block" {...rest}>
