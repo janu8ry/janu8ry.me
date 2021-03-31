@@ -1,6 +1,13 @@
+import { Box } from '@chakra-ui/react';
+import React from 'react';
+
 function Social() {
     // eslint-disable-next-line react/react-in-jsx-scope
-    return <h1>social links</h1>;
+    return (
+        <Box textAlign="center" fontSize="xl">
+            <h1>Not Ready yet...</h1>
+        </Box>
+    );
 }
 
 export default Social;
