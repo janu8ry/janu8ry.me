@@ -1,9 +1,9 @@
-import { Text } from '@chakra-ui/react';
+import { Box, Text } from '@chakra-ui/react';
 import React from 'react';
 
 function NotFound() {
     return (
-        <div>
+        <Box textAlign="center" fontSize="xl">
             <Text bgGradient="linear(to-l, #7928CA,#FF0080)" bgClip="text" fontSize="6xl" fontWeight="extrabold">
                 404 Not Found
             </Text>
@@ -16,7 +16,7 @@ function NotFound() {
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 This page doesn't exist.
             </Text>
-        </div>
+        </Box>
     );
 }
 
