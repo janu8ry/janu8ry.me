@@ -75,7 +75,7 @@ const MenuLinks = ({ isOpen }) => {
                         color="navy"
                         bg={['white', 'white', 'primary.500', 'primary.500']}
                         _hover={{
-                            bg: ['primary.100', 'primary.100', 'primary.600', 'primary.600'],
+                            bg: ['primary.100', 'primary.100', 'primary.600', 'primary.600']
                         }}
                     >
                         Kkutbot
