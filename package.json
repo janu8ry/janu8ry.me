@@ -24,7 +24,7 @@
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "workbox": "workbox generateSW workbox-config.js",
-        "prod": "yarn-run-all build workbox"
+        "prod": "node_modules/yarn-run-all/bin/npm-run-all/index.js build workbox"
     },
     "eslintConfig": {
         "extends": "react-app"
