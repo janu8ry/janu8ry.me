@@ -14,6 +14,7 @@ const colors = {
 const theme = extendTheme({ colors });
 
 function App() {
+    localStorage.setItem('chakra-ui-color-mode', 'dark');
     return (
         <ChakraProvider theme={theme}>
             <NavBar />
