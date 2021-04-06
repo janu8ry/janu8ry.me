@@ -22,7 +22,7 @@ function Home() {
                     </Text>
                     <Stack spacing={4} direction="row" align="center">
                         <ButtonLink text="Github" color="blue" link="https://github.com/janu8ry" icon={FaGithub} />
-                        <ButtonLink text="Website" color="red" link="https://somix.studio" icon={CgWebsite} />
+                        <ButtonLink text="Blog" color="red" link="https://velog.io/@janu8ry" icon={CgWebsite} />
                         <ButtonLink text="Email" color="green" link="mailto:janu8ry0108@gmail.com" icon={MdEmail} />
                     </Stack>
                 </VStack>
