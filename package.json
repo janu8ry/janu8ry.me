@@ -20,7 +20,7 @@
     },
     "scripts": {
         "start": "snowpack dev",
-        "build": "snowpack build",
+        "build": "node --max_old_space_size=4096 ./node_modules/snowpack/index.bin.js build",
         "format": "prettier --check --trailing-comma=none --tab-width 4 --print-width 120 --single-quote \"src/**/*.{js,jsx,ts,tsx}\""
     },
     "eslintConfig": {
